@@ -1,13 +1,13 @@
 [
 	{
-		"employee1": {
+		"employee": {
 			"firstName": "Lokesh",
 			"lastName": "Gupta",
 			"website": "howtodoinjava.com"
 		}
 	},
 	{
-		"employee2": {
+		"employee": {
 			"firstName": "Brian",
 			"lastName": "Schultz",
 			"website": "example.com"
