@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-09T22:09:34 IST" name="Default suite" finished-at="2023-11-09T22:09:39 IST" duration-ms="4561">
+  <suite name="Default suite" duration-ms="4023" started-at="2023-11-10T21:34:33 IST" finished-at="2023-11-10T21:34:37 IST">
     <groups>
     </groups>
-    <test started-at="2023-11-09T22:09:34 IST" name="Default test" finished-at="2023-11-09T22:09:39 IST" duration-ms="4561">
-      <class name="restassuredOps.Operations">
-        <test-method signature="testGetOps()[pri:0, instance:restassuredOps.Operations@333291e3]" started-at="2023-11-09T22:09:34 IST" name="testGetOps" finished-at="2023-11-09T22:09:39 IST" duration-ms="4458" status="PASS">
+    <test name="Default test" duration-ms="4023" started-at="2023-11-10T21:34:33 IST" finished-at="2023-11-10T21:34:37 IST">
+      <class name="restassuredOps.Example1">
+        <test-method status="PASS" signature="deleteOps()[pri:0, instance:restassuredOps.Example1@64d2d351]" name="deleteOps" duration-ms="3958" started-at="2023-11-10T21:34:33 IST" finished-at="2023-11-10T21:34:37 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetOps -->
-      </class> <!-- restassuredOps.Operations -->
+        </test-method> <!-- deleteOps -->
+      </class> <!-- restassuredOps.Example1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

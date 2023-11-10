@@ -1,11 +1,11 @@
 package restassuredOps;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import junit.framework.Assert;
 
 public class Operations {
 	@Test
@@ -51,7 +51,11 @@ public class Operations {
 	public void testGetOps() {
 		RestAssured.baseURI=getUrl("admin", "admin");		
 		Response respone=RestAssured.given().get();		
-		System.out.println(respone.body().asString());		
+		String actaulResponse=respone.body().asString();	
+		String expectedResponse="{\"code\":200,\"type\":\"unknown\",\"message\":\"logged in user session:";
+		System.out.println("actaulResponse: \n\t"+actaulResponse);
+		System.out.println("expectedResponse: \n\t"+expectedResponse);
+		Assert.assertTrue(actaulResponse.startsWith(expectedResponse));
 	}
 	
 	String getUrl(String username,String password) {
